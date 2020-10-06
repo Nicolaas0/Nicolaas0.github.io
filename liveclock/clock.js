@@ -15,6 +15,19 @@ function time(i){
     return i;
 }
 
+function getDays(){
+  var date = new Date();
+  var h = date.getHours();
+
+  if (h < 10) {
+    document.getElementById('day').innerHTML = "Good morning";
+  } else if (h < 18) {
+    document.getElementById('day').innerHTML = "Good day";
+  } else if(h < 24) {
+    document.getElementById('day').innerHTML = "Good night";
+}
+}
+
 function Getname() {
     var txt;
     var txt2;
@@ -24,11 +37,26 @@ function Getname() {
       document.getElementById("result").innerHTML = txt;
       setTimeout(function(){
         window.location.reload(1);
-     }, 500);
+     }, 5000);
     } else {
       txt2 = name;
-      document.getElementById("result").innerHTML = "Hello " + txt2;
+      document.getElementById("result").innerHTML = txt2 + "!!";
     }
 }
 
-
+function changeTime(){
+  var time = new Date;
+  var h = time.getHours();
+  if (h < 10) {
+    document.getElementById('st1').src= "https://media.giphy.com/media/TercUvhYRPkmkDUNZk/giphy.gif";
+    document.body.style.backgroundColor="lightcoral";
+  } else if (h < 18) {
+    document.getElementById('st1').innerHTML = "https://media.giphy.com/media/h2C7YYwEAj02wGwmfy/giphy.gif";
+    document.body.style.backgroundColor="lightsalmon";
+    document.getElementById('day').style.backgroundColor="tomato";
+  } else if(h < 24) {
+    document.getElementById('st1').src = "https://media.giphy.com/media/10Mgxh2ctqqz9m/giphy.gif";
+    document.body.style.backgroundColor="black";
+    document.getElementById('day').style.backgroundColor="lightslategrey"
+}
+}
