@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    background-image: url("img/ashley-whitlatch-36aGnv29Ss0-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+h1{
+    font-size: 130px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Fredoka One', cursive;
+    left: 490px;
+    top: 200px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 64px;
+    color: #ffbf00;
+    font-family: 'Fredoka One', cursive;
+    font-size: 120px;
+}
+
+#result{
+    font-size: 90px;
+    font-family: 'Fredoka One', cursive;
+    background-image:url("");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(141, 37, 132);
+    position: absolute;
+    left: 850px;
+    top: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+#st1{
+    position: absolute;
+    width: 20%;
+    top: 10px;
+    left: 100px;
+}
+
+
+#day{
+    font-size: 90px;
+    font-family: 'Fredoka One', cursive;
+    background-image:url("");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 350px;
+    top: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+.animate__animated.animate__bounce{
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+
+.animate__animated.animate__rubberBand{
+    animation-duration: 1.5s;
+}
+
+.animate__animated.animate__tada{
+    animation-duration: 1.2s;
+}
+
